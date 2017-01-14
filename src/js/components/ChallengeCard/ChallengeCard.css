@@ -49,14 +49,24 @@
     margin: 15px 0 0;
 }
 
-@media only screen and (max-width: 979px) {
+@media only screen and (max-width: 992px) {
+    .challenge-card {
+        width: 31%;
+        margin-right: 2%;
+    }
     .challenge-card:hover {
         box-shadow: 0;
         transform: scale(1);
     }
+    .challenge-card .thumbnail {
+        height: 140px;
+    }
+    .challenge-card .thumbnail img {
+        height: 100%;
+    }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .challenge-card {
         width: 100%;
         margin: 0 0 40px 0;
