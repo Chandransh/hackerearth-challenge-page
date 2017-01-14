@@ -6,7 +6,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 
 import './Header.css';
-import logo from '../../../resources/images/he-logo.png';
+import logo from '../../../resources/images/he-logo-white.png';
 
 class Header extends Component {
   render() {
