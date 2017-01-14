@@ -8,24 +8,30 @@
     padding: 0;
     margin: 0 20px 20px 0;
     float: left;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
+}
+.challenge-card .thumbnail {
+    max-height: 150px;
+    overflow: hidden;
+}
+.challenge-card .card-content {
+    padding: 0 15px 15px;
 }
 .challenge-card .challenge-type {
     display: inline-block;
     padding: 5px 10px;
-    background: #ffd700;
+    background: #ffdc20;
     position: relative;
     top: -15px;
     font-size: 14px;
     border-radius: 2px;
 }
 .challenge-card .title {
-    padding: 0 10px 10px;
+    padding: 10px 0 20px;
 }
-.challenge-card>.btn {
-    margin: 15px 0 20px;
-    display: inline-block;
+.challenge-card .btn {
+    margin: 15px 0 0;
 }
 
 @media only screen and (max-width: 979px) {
@@ -35,6 +41,6 @@
 @media only screen and (max-width: 767px) {
     .challenge-card {
         width: 100%;
-        margin-right: 0;
+        margin: 0 0 40px 0;
     }
 }
