@@ -8,7 +8,7 @@ import './ChallengeCard.css';
 import icons from '../../../resources/images/icons.png';
 
 const ChallengeCard = ({thumbnail, title, url, challengeType, startTimestamp}) => (
-  <div className="challenge-card">
+  <div className="challenge-card text-center">
     <div className="thumbnail full-width float-left">
       <a href={url}>
         <img className="full-width float-left"
@@ -25,8 +25,7 @@ const ChallengeCard = ({thumbnail, title, url, challengeType, startTimestamp}) =
           <i style={{backgroundImage:"url('"+icons+"')", backgroundPosition: "0px"}}></i>Hiring Challenge
         </p>
       }
-      <h3 className="title text-ellipsis"
-          title={title}>
+      <h3 className="title text-ellipsis" title={title}>
         <a href={url}>{title}</a>
       </h3>
       <p className="text-secondary text-uppercase">
@@ -39,7 +38,11 @@ const ChallengeCard = ({thumbnail, title, url, challengeType, startTimestamp}) =
 );
 
 ChallengeCard.propTypes = {
-  thumbnail: React.PropTypes.string
+  thumbnail: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired,
+  url: React.PropTypes.string.isRequired,
+  challengeType: React.PropTypes.string.isRequired,
+  startTimestamp: React.PropTypes.string.isRequired
 };
 
 export default ChallengeCard;
