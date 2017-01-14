@@ -5,20 +5,30 @@
 import React, {Component} from 'react';
 
 import './ChallengeCard.css';
+import icons from '../../../resources/images/icons.png';
 
 const ChallengeCard = ({thumbnail, title, url, challengeType, startTimestamp}) => (
   <div className="challenge-card">
-    <a href={url}></a>
     <div className="thumbnail full-width float-left">
-      <img className="full-width float-left"
-           src={thumbnail} alt={title}/>
+      <a href={url}>
+        <img className="full-width float-left"
+             src={thumbnail} alt={title}/>
+      </a>
     </div>
     <div className="card-content">
       {(challengeType.toLowerCase()==="monthly challenges") ?
-        <p className="challenge-type" style={{backgroundColor:"#aeff5a"}}>&#9873; Monthly Challenge</p>
-        : <p className="challenge-type">&#9968; Hiring Challenge</p>}
+        <p className="challenge-type" style={{backgroundColor:"#aeff5a"}}>
+          <i style={{backgroundImage:"url('"+icons+"')"}}></i>Monthly Challenge
+        </p>
+        :
+        <p className="challenge-type">
+          <i style={{backgroundImage:"url('"+icons+"')", backgroundPosition: "0px"}}></i>Hiring Challenge
+        </p>
+      }
       <h3 className="title text-ellipsis"
-          title={title}>{title}</h3>
+          title={title}>
+        <a href={url}>{title}</a>
+      </h3>
       <p className="text-secondary text-uppercase">
         <small>Starts on</small>
       </p>
