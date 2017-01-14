@@ -1,0 +1,40 @@
+.challenge-card {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0;
+    margin: 0 20px 20px 0;
+    float: left;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.challenge-card .challenge-type {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ffd700;
+    position: relative;
+    top: -15px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.challenge-card .title {
+    padding: 0 10px 10px;
+}
+.challenge-card>.btn {
+    margin: 15px 0 20px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 979px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .challenge-card {
+        width: 100%;
+        margin-right: 0;
+    }
+}

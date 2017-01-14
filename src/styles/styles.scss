@@ -1,0 +1,119 @@
+/*theme purple: #323754*/
+* {
+  box-sizing: border-box;
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1, h3, p {
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  padding: 20px 0;
+  font-size: 1.8rem;
+}
+h3 {
+  padding: 5px 0;
+  font-size: 1.3rem;
+}
+
+.text-primary {
+  color: #323754;
+}
+.text-secondary {
+  color: #999999;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.full-width {
+  width: 100%;
+}
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.full-grid {
+  padding: 0;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background: #323754;
+  color: #fff;
+}
+.btn-outline {
+  border: 1px solid #323754;
+  color: #323754;
+}
+.btn-outline:hover {
+  background: #323754;
+  color: #fff;
+}
+.btn[disabled] {
+  pointer-events: none;
+  background: #ccc;
+  color: #999999;
+}
+
+@media only screen and (max-width: 979px) {
+  .full-grid {
+    padding: 0 30px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .full-grid {
+    padding: 0 15px;
+  }
+}
