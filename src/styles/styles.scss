@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body, html {
-  padding: 0;
+  padding: 0 0 20px;
   margin: 0;
   color: #333;
   background: #f9f9f9;
@@ -14,6 +14,7 @@ body, html {
 }
 a {
   text-decoration: none;
+  color: #323754;
 }
 h1, h3, p {
   margin: 0;
