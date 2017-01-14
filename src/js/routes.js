@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, IndexRoute, Redirect} from 'react-router';
+import {Route, IndexRoute} from 'react-router';
 
 import Home from './containers/Home/Home';
 import ChallengePage from './connect-views/ChallengePage/ChallengePage';
