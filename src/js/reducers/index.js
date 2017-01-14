@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux';
 
-import addData from './addData';
+import getUpcomingChallenges from './getUpcomingChallenges';
 
 const rootReducer = combineReducers({
-  addData
+  getUpcomingChallenges
 });
 
 export default rootReducer;
