@@ -1,4 +1,6 @@
 /*theme purple: #323754*/
+/*TODO add normalise.css*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 * {
   box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ body, html {
   color: #333;
   background: #f9f9f9;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 a {
   text-decoration: none;
