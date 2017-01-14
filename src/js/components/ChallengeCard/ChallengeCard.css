@@ -54,8 +54,10 @@
 
 @media only screen and (max-width: 992px) {
     .challenge-card {
-        width: 31%;
-        margin-right: 2%;
+        width: 31%; /*fallback*/
+        width: calc(100%/3 - 10px);
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .challenge-card:hover {
         box-shadow: 0;
