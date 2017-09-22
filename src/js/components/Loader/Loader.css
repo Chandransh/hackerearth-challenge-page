@@ -20,6 +20,7 @@
 .loader:after {
   background: #ff6040;
   -webkit-animation: load1 1s infinite ease-in-out;
+  -moz-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
@@ -30,9 +31,12 @@
   position: relative;
   font-size: 11px;
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
 .loader:before,
@@ -44,6 +48,7 @@
 .loader:before {
   left: -1.5em;
   -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 .loader:after {
